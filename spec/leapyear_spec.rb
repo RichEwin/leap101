@@ -8,4 +8,8 @@ describe LeapYear do
     it "receives a year and confirms if it is or isn't a leapyear" do
         expect(subject).to respond_to(:year).with(1).arguments
     end
+
+    it 'returns true if a year is divisible by 400' do 
+        expect(subject.year(2000)).to eq true 
+    end 
 end 
